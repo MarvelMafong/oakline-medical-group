@@ -1,6 +1,6 @@
 {
  "base": "http://localhost:4173",
- "at": "2026-11-20T11:15:22.963Z",
+ "at": "2026-11-20T13:53:14.783Z",
  "routes": 41,
  "results": {
   "status": true,
@@ -22,7 +22,7 @@
   "casestudy-schema": true,
   "casestudy-links": true,
   "rcheck": true,
-  "caseSize": 93437,
+  "caseSize": 93320,
   "caseimgs": true,
   "caseImgCount": 4,
   "cache-html": true,

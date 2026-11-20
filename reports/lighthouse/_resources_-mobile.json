@@ -1,0 +1,34 @@
+{
+ "row": {
+  "page": "/resources/",
+  "mobile": true,
+  "seo": 69,
+  "accessibility": 98,
+  "bestPractices": 100,
+  "performance": 81,
+  "lcpMs": 3313,
+  "cls": 0,
+  "tbtMs": 437
+ },
+ "failing": [
+  "largest-contentful-paint: 0.69",
+  "total-blocking-time: 0.64",
+  "max-potential-fid: 0.14",
+  "interactive: 0.88",
+  "mainthread-work-breakdown: 0",
+  "bootup-time: 0",
+  "largest-contentful-paint-element: 0",
+  "heading-order: 0",
+  "label-content-name-mismatch: 0",
+  "render-blocking-resources: 0",
+  "unused-css-rules: 0.5",
+  "unused-javascript: 0",
+  "uses-responsive-images: 0.5",
+  "legacy-javascript: 0",
+  "is-crawlable: 0",
+  "image-delivery-insight: 0.5",
+  "legacy-javascript-insight: 0",
+  "network-dependency-tree-insight: 0",
+  "render-blocking-insight: 0"
+ ]
+}

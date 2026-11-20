@@ -6,7 +6,7 @@ const all = paths.includes('*');
 const list = all ? ['/', '/case-study/'] : paths; // "all" mode: extend sitemap from routes.json if present
 let routes = list;
 if (all && fs.existsSync('src/data/routes.json')) routes = JSON.parse(fs.readFileSync('src/data/routes.json', 'utf8'));
-const caseImgs = ['/images/case-study-og.png', '/images/case-home.png', '/images/case-booking.png', '/images/case-admin.png', '/images/case-mobile.png'].filter((p) => fs.existsSync('public' + p));
+const caseImgs = ['/images/case-study-og.png', '/images/case-home.webp', '/images/case-booking.webp', '/images/case-admin.webp', '/images/case-mobile.webp'].filter((p) => fs.existsSync('public' + p));
 const sm = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n` +
   routes.map((r) => `  <url><loc>${SITE_URL}${r}</loc><lastmod>${new Date().toISOString().slice(0, 10)}</lastmod>${r === '/case-study/' ? caseImgs.map((i) => `<image:image><image:loc>${SITE_URL}${i}</image:loc></image:image>`).join('') : ''}</url>`).join('\n') + `\n</urlset>\n`;
 fs.writeFileSync('public/sitemap.xml', sm);

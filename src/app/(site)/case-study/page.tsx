@@ -48,7 +48,7 @@ export default function Page() {
               </div>
               <p className="cta-note"><b>Oakline Medical Group is a fictional clinic</b> created as a portfolio project. No real patients, doctors or reviews appear on it.</p>
             </div>
-            <div className="shot rv"><img src="/images/case-home.png" width={1280} height={800} alt="Screenshot of the Oakline Medical Group home page on desktop" fetchPriority="high" /></div>
+            <div className="shot rv"><img src="/images/case-home.webp" width={1280} height={800} alt="Screenshot of the Oakline Medical Group home page on desktop" fetchPriority="high" /></div>
           </div>
         </div>
       </section>
@@ -87,9 +87,9 @@ export default function Page() {
             {['Appointment request flow with a calendar, slot picker, save and resume, confirmation reference and calendar download', 'Request lookup to check status, reschedule or cancel', 'Six department pages from one template, each with services, doctors and FAQs', 'Doctor directory with filters and profile pages', 'Staff admin: requests table with search, filters, sorting, bulk actions, notes and CSV export', 'Dashboard with live charts built as inline SVG', 'Health resources with search, category and tag filters and full articles', 'Accessible contact form with a staff inbox', 'First visit guide, insurance and billing page, privacy and terms'].map((x) => <li key={x} className="rv" style={{ background: 'var(--off)', boxShadow: 'var(--sh)', borderRadius: 16, justifyContent: 'flex-start', gap: 10 }}><Icon n="check" size={22} />{x}</li>)}
           </ul>
           <div className="shots">
-            <figure className="shot rv"><img src="/images/case-booking.png" width={1280} height={800} loading="lazy" alt="Screenshot of the appointment request flow on desktop" /><figcaption>The appointment request flow.</figcaption></figure>
-            <figure className="shot rv"><img src="/images/case-mobile.png" width={390} height={844} loading="lazy" alt="Screenshot of the home page on a phone" /><figcaption>The home page on a phone.</figcaption></figure>
-            <figure className="shot rv" style={{ gridColumn: '1/-1' }}><img src="/images/case-admin.png" width={1280} height={800} loading="lazy" alt="Screenshot of the staff dashboard with charts" /><figcaption>The staff dashboard.</figcaption></figure>
+            <figure className="shot rv"><img src="/images/case-booking.webp" width={1280} height={800} loading="lazy" alt="Screenshot of the appointment request flow on desktop" /><figcaption>The appointment request flow.</figcaption></figure>
+            <figure className="shot rv"><img src="/images/case-mobile.webp" width={390} height={844} loading="lazy" alt="Screenshot of the home page on a phone" /><figcaption>The home page on a phone.</figcaption></figure>
+            <figure className="shot rv" style={{ gridColumn: '1/-1' }}><img src="/images/case-admin.webp" width={1280} height={800} loading="lazy" alt="Screenshot of the staff dashboard with charts" /><figcaption>The staff dashboard.</figcaption></figure>
           </div>
         </div>
       </section>

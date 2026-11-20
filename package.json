@@ -2,6 +2,7 @@
   "name": "oakline-medical-group",
   "version": "1.0.0",
   "private": true,
+  "engines": { "node": "22.x" },
   "scripts": {
     "images": "node scripts/images.mjs",
     "seo:gen": "node scripts/seo-gen.mjs",

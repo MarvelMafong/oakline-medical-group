@@ -1,0 +1,138 @@
+{
+ "at": "2026-11-20T12:37:53.875Z",
+ "base": "http://localhost:4173",
+ "rows": [
+  {
+   "page": "/",
+   "mobile": true,
+   "seo": 69,
+   "accessibility": 100,
+   "bestPractices": 96,
+   "performance": 63,
+   "lcpMs": 3571,
+   "cls": 0,
+   "tbtMs": 1501
+  },
+  {
+   "page": "/case-study/",
+   "mobile": true,
+   "seo": 100,
+   "accessibility": 100,
+   "bestPractices": 96,
+   "performance": 56,
+   "lcpMs": 5449,
+   "cls": 0,
+   "tbtMs": 1147
+  },
+  {
+   "page": "/appointments/",
+   "mobile": true,
+   "seo": 69,
+   "accessibility": 100,
+   "bestPractices": 100,
+   "performance": 67,
+   "lcpMs": 3198,
+   "cls": 0.063,
+   "tbtMs": 1309
+  },
+  {
+   "page": "/departments/primary-care/",
+   "mobile": true,
+   "seo": 69,
+   "accessibility": 100,
+   "bestPractices": 96,
+   "performance": 66,
+   "lcpMs": 3478,
+   "cls": 0,
+   "tbtMs": 1336
+  },
+  {
+   "page": "/resources/",
+   "mobile": true,
+   "seo": 69,
+   "accessibility": 98,
+   "bestPractices": 100,
+   "performance": 81,
+   "lcpMs": 3313,
+   "cls": 0,
+   "tbtMs": 437
+  },
+  {
+   "page": "/admin/dashboard/",
+   "mobile": true,
+   "seo": 66,
+   "accessibility": 100,
+   "bestPractices": 100,
+   "performance": 72,
+   "lcpMs": 3095,
+   "cls": 0.08,
+   "tbtMs": 881
+  },
+  {
+   "page": "/",
+   "mobile": false,
+   "seo": 69,
+   "accessibility": 100,
+   "bestPractices": 96,
+   "performance": 35,
+   "lcpMs": 3966,
+   "cls": 0,
+   "tbtMs": 17327
+  },
+  {
+   "page": "/case-study/",
+   "mobile": false,
+   "seo": 100,
+   "accessibility": 100,
+   "bestPractices": 96,
+   "performance": 33,
+   "lcpMs": 4691,
+   "cls": 0.001,
+   "tbtMs": 3977
+  },
+  {
+   "page": "/appointments/",
+   "mobile": false,
+   "seo": 69,
+   "accessibility": 100,
+   "bestPractices": 96,
+   "performance": 41,
+   "lcpMs": 3091,
+   "cls": 0.019,
+   "tbtMs": 2185
+  },
+  {
+   "page": "/departments/primary-care/",
+   "mobile": false,
+   "seo": 69,
+   "accessibility": 100,
+   "bestPractices": 96,
+   "performance": 39,
+   "lcpMs": 3737,
+   "cls": 0,
+   "tbtMs": 2921
+  },
+  {
+   "page": "/resources/",
+   "mobile": false,
+   "seo": 69,
+   "accessibility": 98,
+   "bestPractices": 96,
+   "performance": 38,
+   "lcpMs": 3586,
+   "cls": 0.001,
+   "tbtMs": 2084
+  },
+  {
+   "page": "/admin/dashboard/",
+   "mobile": false,
+   "seo": 66,
+   "accessibility": 100,
+   "bestPractices": 100,
+   "performance": 67,
+   "lcpMs": 3071,
+   "cls": 0.056,
+   "tbtMs": 337
+  }
+ ]
+}

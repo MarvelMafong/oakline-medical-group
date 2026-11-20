@@ -15,7 +15,7 @@ for (const [out, from, left, top, width, height] of CROPS) {
   const o = path.join(dir, out + '.jpg');
   if (!fs.existsSync(o)) await sharp(path.join(dir, from + '.jpg')).extract({ left, top, width, height }).jpeg({ quality: 88 }).toFile(o);
 }
-const files = fs.readdirSync(dir).filter((f) => /^[a-z0-9-]+\.jpg$/.test(f) && !/-\d+\.jpg$/.test(f));
+const files = fs.readdirSync(dir).filter((f) => /^[a-z0-9-]+\.jpg$/.test(f) && !/-\d{3,4}\.jpg$/.test(f));
 for (const f of files) {
   const name = f.replace('.jpg', '');
   const src = path.join(dir, f);
@@ -23,7 +23,7 @@ for (const f of files) {
   meta[name] = { w: info.width, h: info.height };
   const ws = [...new Set(WIDTHS.filter((w) => w < info.width).concat([info.width]))];
   for (const w of ws) {
-    for (const [ext, fn] of [['webp', (s) => s.webp({ quality: 74 })], ['avif', (s) => s.avif({ quality: 52, effort: 3 })], ['jpg', (s) => s.jpeg({ quality: 78, mozjpeg: true })]]) {
+    for (const [ext, fn] of [['webp', (s) => s.webp({ quality: 74 })], ['avif', (s) => s.avif({ quality: 52, effort: 3 })], ]) {
       const out = path.join(dir, `${name}-${w}.${ext}`);
       if (w === info.width && ext === 'jpg') continue;
       if (fs.existsSync(out) && fs.statSync(out).mtimeMs > fs.statSync(src).mtimeMs) continue;
@@ -32,6 +32,7 @@ for (const f of files) {
   }
   meta[name].ws = ws;
 }
+for (const f of fs.existsSync('shots') ? fs.readdirSync('shots') : []) { const o = 'public/images/case-' + f.replace(/^case-/, '').replace('.png', '.webp'); if (!fs.existsSync(o)) await sharp('shots/' + f).webp({ quality: 80 }).toFile(o); }
 fs.mkdirSync('src/data', { recursive: true });
 fs.writeFileSync('src/data/images.json', JSON.stringify(meta, null, 1));
 console.log('images ready:', Object.keys(meta).length);

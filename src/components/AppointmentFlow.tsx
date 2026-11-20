@@ -90,7 +90,7 @@ export function AppointmentFlow() {
   const reset = () => { draftStore.set(null); setD(EMPTY); setStep(0); setErrs({}); setNotice(''); setDone(null); started.current = false; };
   const saveLater = () => setNotice('Saved on this device. Come back to this page any time to continue. Nothing has been sent.');
 
-  if (!ready || reqs === null || draft === undefined) return <div className="form-card" aria-busy="true"><p>Loading the request form...</p></div>;
+  if (!ready || reqs === null || draft === undefined) return <div className="form-card" aria-busy="true" style={{ minHeight: 640 }}><p>Loading the request form...</p></div>;
 
   if (done) {
     const dept = deptBySlug(done.dept)!;

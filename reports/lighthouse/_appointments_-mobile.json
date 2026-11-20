@@ -1,0 +1,32 @@
+{
+ "row": {
+  "page": "/appointments/",
+  "mobile": true,
+  "seo": 69,
+  "accessibility": 100,
+  "bestPractices": 100,
+  "performance": 67,
+  "lcpMs": 3198,
+  "cls": 0.063,
+  "tbtMs": 1309
+ },
+ "failing": [
+  "largest-contentful-paint: 0.72",
+  "total-blocking-time: 0.18",
+  "max-potential-fid: 0.01",
+  "interactive: 0.87",
+  "mainthread-work-breakdown: 0",
+  "bootup-time: 0",
+  "largest-contentful-paint-element: 0",
+  "label-content-name-mismatch: 0",
+  "render-blocking-resources: 0",
+  "unused-css-rules: 0.5",
+  "unused-javascript: 0",
+  "legacy-javascript: 0.5",
+  "is-crawlable: 0",
+  "forced-reflow-insight: 0",
+  "legacy-javascript-insight: 0.5",
+  "network-dependency-tree-insight: 0",
+  "render-blocking-insight: 0"
+ ]
+}

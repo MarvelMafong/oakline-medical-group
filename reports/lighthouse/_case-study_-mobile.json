@@ -1,0 +1,33 @@
+{
+ "row": {
+  "page": "/case-study/",
+  "mobile": true,
+  "seo": 100,
+  "accessibility": 100,
+  "bestPractices": 96,
+  "performance": 56,
+  "lcpMs": 5449,
+  "cls": 0,
+  "tbtMs": 1147
+ },
+ "failing": [
+  "largest-contentful-paint: 0.19",
+  "total-blocking-time: 0.22",
+  "max-potential-fid: 0.11",
+  "errors-in-console: 0",
+  "interactive: 0.71",
+  "mainthread-work-breakdown: 0",
+  "largest-contentful-paint-element: 0",
+  "label-content-name-mismatch: 0",
+  "render-blocking-resources: 0.5",
+  "unused-css-rules: 0",
+  "unused-javascript: 0",
+  "modern-image-formats: 0",
+  "uses-responsive-images: 0",
+  "legacy-javascript: 0.5",
+  "image-delivery-insight: 0",
+  "legacy-javascript-insight: 0.5",
+  "network-dependency-tree-insight: 0",
+  "render-blocking-insight: 0"
+ ]
+}

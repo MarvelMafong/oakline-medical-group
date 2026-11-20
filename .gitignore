@@ -12,3 +12,6 @@ oakline-handoff
 next-env.d.ts
 *.tsbuildinfo
 .lighthouse-tmp
+
+.vercel
+.env*

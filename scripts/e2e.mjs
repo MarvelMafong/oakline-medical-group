@@ -13,7 +13,7 @@ async function ctx(w, h, mobile = false) {
   const c = await browser.newContext({ viewport: { width: w, height: h }, isMobile: mobile, deviceScaleFactor: 1 });
   const p = await c.newPage();
   p.on('console', (m) => { if (m.type() === 'error' && !/Failed to load resource/.test(m.text())) errors.push(`${p.url()} ${m.text()}`); });
-  p.on('response', (r) => { if (r.status() >= 400 && !/__next.|/nope/|this-page/.test(r.url())) errors.push(`HTTP ${r.status()} ${r.url()}`); });
+  p.on('response', (r) => { if (r.status() >= 400 && !/__next\.|\/nope\//.test(r.url())) errors.push(`HTTP ${r.status()} ${r.url()}`); });
   p.on('pageerror', (e) => errors.push(`${p.url()} ${e.message}`));
   return [c, p];
 }
@@ -24,7 +24,7 @@ let [c, p] = await ctx(1280, 800);
 await p.goto(BASE + '/'); await p.waitForSelector('h1');
 t('home h1', /connected/.test(await p.textContent('h1')));
 await scrollAll(p);
-if (shots) { await p.waitForTimeout(1800); await p.screenshot({ path: 'public/images/case-home.png' }); }
+if (shots) { await p.waitForTimeout(1800); await p.screenshot({ path: 'shots/case-home.png' }); }
 t('no horizontal scroll (desktop home)', await p.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
 await p.goto(BASE + '/appointments/'); await p.waitForSelector('text=Which department?');
 await p.check('input[name=dept][value=cardiology]', { force: true });
@@ -40,7 +40,7 @@ await p.click('button:has-text("Next")');
 await p.fill('#f-firstName', 'Test'); await p.fill('#f-lastName', 'Patient'); await p.fill('#f-phone', '404-555-0199'); await p.fill('#f-email', 'seraphielray@gmail.com');
 await p.click('button:has-text("Next")');
 await p.waitForSelector('text=Review your request');
-if (shots) { await p.screenshot({ path: 'public/images/case-booking.png' }); }
+if (shots) { await p.screenshot({ path: 'shots/case-booking.png' }); }
 await p.check('#f-understand', { force: true });
 await p.click('button:has-text("Send request")');
 await p.waitForSelector('.refbox');
@@ -61,7 +61,7 @@ t('status change shows on lookup', (await p.textContent('.statusbadge')).trim() 
 // admin dashboard + shot
 await p.goto(BASE + '/admin/dashboard/'); await p.waitForSelector('.chart'); await p.waitForTimeout(500);
 t('dashboard charts', (await p.locator('.chart svg').count()) >= 4);
-if (shots) await p.screenshot({ path: 'public/images/case-admin.png' });
+if (shots) await p.screenshot({ path: 'shots/case-admin.png' });
 // contact -> inbox
 await p.goto(BASE + '/contact/'); await p.fill('#c-name', 'Test Person'); await p.fill('#c-email', 'seraphielray@gmail.com'); await p.fill('#c-msg', 'Hello from the test'); await p.click('button:has-text("Send message")');
 await p.waitForSelector('text=Message received');
@@ -93,7 +93,7 @@ await p.goto(BASE + '/'); await scrollAll(p); await p.waitForTimeout(1500);
 t('mobile burger menu', await p.locator('.burger').isVisible());
 await p.click('.burger'); t('mobile menu opens', await p.locator('#mm').isVisible());
 await p.click('.burger');
-if (shots) { await p.waitForTimeout(500); await p.screenshot({ path: 'public/images/case-mobile.png' }); }
+if (shots) { await p.waitForTimeout(500); await p.screenshot({ path: 'shots/case-mobile.png' }); }
 await c.close();
 t('no console errors', errors.length === 0, errors.slice(0, 5).join(' || '));
 await browser.close();

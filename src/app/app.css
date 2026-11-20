@@ -140,3 +140,7 @@ table.tbl{width:100%;border-collapse:collapse;font-size:15px;min-width:880px}
 .shot figcaption{padding:12px 16px;font-size:14px}
 .metric{display:grid;gap:4px}
 .metric b{font:800 40px/1 var(--fh);color:var(--cobalt)}
+
+/* performance: skip rendering and animation work for sections far off screen; drop permanent layer promotion */
+.sec:not(.hero):not(.pg){content-visibility:auto;contain-intrinsic-size:auto 800px}
+img{will-change:auto!important}

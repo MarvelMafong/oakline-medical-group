@@ -2,6 +2,7 @@
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
+import zlib from 'node:zlib';
 const port = Number(process.argv[2] || 4173);
 const root = path.resolve('out');
 const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.avif': 'image/avif', '.woff2': 'font/woff2', '.txt': 'text/plain', '.xml': 'application/xml', '.json': 'application/json', '.ico': 'image/x-icon' };
@@ -14,7 +15,9 @@ http.createServer((req, res) => {
   const send = (code, file) => {
     const hdr = { 'content-type': types[path.extname(file)] || 'application/octet-stream', server: 'Vercel-local' };
     rules.forEach((r) => { try { if (r.re.test(u)) r.h.forEach((x) => { hdr[x.key.toLowerCase()] = x.value; }); } catch { /* ignore */ } });
-    res.writeHead(code, hdr); fs.createReadStream(file).pipe(res);
+    const comp = /text|javascript|json|xml|svg/.test(hdr['content-type']) && /gzip/.test(req.headers['accept-encoding'] || '');
+    if (comp) hdr['content-encoding'] = 'gzip';
+    res.writeHead(code, hdr); const rs = fs.createReadStream(file); (comp ? rs.pipe(zlib.createGzip()) : rs).pipe(res);
   };
   if (!f.startsWith(root)) { res.writeHead(403); return res.end(); }
   if (fs.existsSync(f) && fs.statSync(f).isDirectory()) { if (!u.endsWith('/')) { res.writeHead(308, { location: u + '/' }); return res.end(); } f = path.join(f, 'index.html'); }
