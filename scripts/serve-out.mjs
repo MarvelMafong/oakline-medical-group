@@ -9,6 +9,7 @@ const vj = fs.existsSync('vercel.json') ? JSON.parse(fs.readFileSync('vercel.jso
 const rules = (vj.headers || []).map((h) => ({ re: new RegExp('^' + h.source.replace(/\(\.\*\)/g, '.*') + '$'), h: h.headers }));
 http.createServer((req, res) => {
   let u = decodeURIComponent(req.url.split('?')[0]);
+  u = u.replace(/(__next.[^/]*?).(__PAGE__.txt)$/, '$1/$2');
   let f = path.join(root, u);
   const send = (code, file) => {
     const hdr = { 'content-type': types[path.extname(file)] || 'application/octet-stream', server: 'Vercel-local' };

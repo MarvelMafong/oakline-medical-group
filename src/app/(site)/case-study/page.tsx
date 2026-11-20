@@ -9,7 +9,7 @@ import { Crumbs } from '@/components/Crumbs';
 import { bg } from '@/components/Img';
 
 const TITLE = 'Healthcare Website Design Case Study: Clinic Website by TekGemm Studio';
-const DESC = 'A healthcare website, designed and built by TekGemm Studio. Appointment requests, department and doctor pages, a staff admin with dashboard, accessible forms and fast static pages. Oakline is a fictional portfolio clinic.';
+const DESC = 'A healthcare website built by TekGemm Studio: appointment requests, doctor pages, staff admin, accessible forms. Oakline is a fictional portfolio clinic.';
 export const metadata = pageMeta({ title: TITLE, description: DESC, path: '/case-study/', image: '/images/case-study-og.png' });
 
 const FAQS = [

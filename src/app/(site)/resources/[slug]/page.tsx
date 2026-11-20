@@ -14,7 +14,7 @@ export const dynamicParams = false;
 export function generateStaticParams() { return ARTICLES.map((a) => ({ slug: a.slug })); }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const a = articleBySlug((await params).slug)!;
-  return pageMeta({ title: `${a.title} | Oakline Health Resources`, description: a.summary, path: `/resources/${a.slug}/`, type: 'article' });
+  return pageMeta({ title: `${a.title} | Oakline`, description: a.summary, path: `/resources/${a.slug}/`, type: 'article' });
 }
 const fmt = (s: string) => new Date(s + 'T12:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 

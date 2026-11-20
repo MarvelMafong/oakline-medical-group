@@ -13,7 +13,7 @@ export const dynamicParams = false;
 export function generateStaticParams() { return DOCS.map((d) => ({ slug: d.slug })); }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const d = docBySlug((await params).slug)!;
-  return pageMeta({ title: `${d.name}, ${d.role} | Oakline Medical Group`, description: d.bio.slice(0, 155), path: `/doctors/${d.slug}/` });
+  return pageMeta({ title: `${d.name} | Oakline Medical Group`, description: d.bio.slice(0, 155), path: `/doctors/${d.slug}/` });
 }
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {

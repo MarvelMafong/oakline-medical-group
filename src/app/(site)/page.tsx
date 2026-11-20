@@ -10,7 +10,7 @@ import { QuickRequest } from '@/components/QuickRequest';
 import { pageMeta, JsonLd } from '@/components/seo';
 
 export const metadata = pageMeta({
-  title: "Primary Care, Women's Health and More in Sandy Springs, GA | Oakline Medical Group",
+  title: 'Primary Care and More in Sandy Springs, GA | Oakline Medical Group',
   description: 'Approachable, coordinated outpatient care in Sandy Springs, Georgia. Request an appointment with Oakline Medical Group, a fictional clinic.',
   path: '/',
 });
