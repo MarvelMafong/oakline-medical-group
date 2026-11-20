@@ -11,7 +11,7 @@ const routes = walk('out').filter((f) => f.endsWith('index.html')).map((f) => '/
 const results = {};
 const fail = {};
 const rec = (id, ok, note = '') => { results[id] = results[id] === false ? false : ok; if (!ok) (fail[id] ||= []).push(note); };
-const get = async (p, opt = {}) => fetch(BASE + p, { redirect: 'manual', headers: { 'accept-encoding': 'gzip, br' }, ...opt });
+const get = async (p, opt = {}) => { for (let a = 0; a < 4; a++) { try { const t0 = Date.now(); const r = await fetch(BASE + p, { redirect: 'manual', headers: { 'accept-encoding': 'gzip, br' }, signal: AbortSignal.timeout(120000), ...opt }); const first = Date.now() - t0; const buf = await r.arrayBuffer(); return { first, status: r.status, headers: r.headers, text: async () => Buffer.from(buf).toString('utf8') }; } catch (e) { if (a === 3) throw e; await new Promise((x) => setTimeout(x, 2000)); } } };
 const attr = (h, re) => (h.match(re) || [])[1];
 
 const titles = new Map();
@@ -20,7 +20,7 @@ const pages = {};
 for (const r of routes) {
   const t0 = Date.now();
   const res = await get(r);
-  const ttfb = Date.now() - t0;
+  const ttfb = res.first ?? (Date.now() - t0);
   const html = await res.text();
   rec('status', res.status === 200, `${r} ${res.status}`);
   rec('ttfb', ttfb < 800, `${r} ${ttfb}ms`);

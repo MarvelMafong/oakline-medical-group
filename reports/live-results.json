@@ -1,6 +1,6 @@
 {
- "base": "http://localhost:4173",
- "at": "2026-11-20T14:25:51.204Z",
+ "base": "https://oakline-medical-group-zeta.vercel.app",
+ "at": "2026-11-20T16:17:03.601Z",
  "routes": 41,
  "results": {
   "status": true,

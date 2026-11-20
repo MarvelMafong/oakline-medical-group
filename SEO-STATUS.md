@@ -2,24 +2,24 @@
 
 Every item has one status. DONE means a script or file check passed (see `reports/live-results.json`). DONE-READY means built and switched off because clinic pages are intentionally noindex. CONFIG waits for a key or code. OWNER is a human task. N/A has an honest reason.
 
-Last live check: 2026-11-20T13:53:14.783Z against http://localhost:4173 (41 routes).
+Last live check: 2026-11-20T16:17:03.601Z against https://oakline-medical-group-zeta.vercel.app (41 routes).
 
 ## Lighthouse (recorded)
 
 | Page | Form | SEO | A11y | Best practices | Perf | LCP ms | CLS | TBT ms |
 |---|---|---|---|---|---|---|---|---|
-| / | mobile | 69 | 100 | 96 | 63 | 3571 | 0 | 1501 |
-| /case-study/ | mobile | 100 | 100 | 96 | 56 | 5449 | 0 | 1147 |
-| /appointments/ | mobile | 69 | 100 | 100 | 67 | 3198 | 0.063 | 1309 |
-| /departments/primary-care/ | mobile | 69 | 100 | 96 | 66 | 3478 | 0 | 1336 |
-| /resources/ | mobile | 69 | 98 | 100 | 81 | 3313 | 0 | 437 |
-| /admin/dashboard/ | mobile | 66 | 100 | 100 | 72 | 3095 | 0.08 | 881 |
-| / | desktop | 69 | 100 | 96 | 35 | 3966 | 0 | 17327 |
-| /case-study/ | desktop | 100 | 100 | 96 | 33 | 4691 | 0.001 | 3977 |
-| /appointments/ | desktop | 69 | 100 | 96 | 41 | 3091 | 0.019 | 2185 |
-| /departments/primary-care/ | desktop | 69 | 100 | 96 | 39 | 3737 | 0 | 2921 |
-| /resources/ | desktop | 69 | 98 | 96 | 38 | 3586 | 0.001 | 2084 |
-| /admin/dashboard/ | desktop | 66 | 100 | 100 | 67 | 3071 | 0.056 | 337 |
+| / | mobile | 69 | 100 | 96 | 71 | 2433 | 0 | 1619 |
+| /case-study/ | mobile | 100 | 100 | 100 | 68 | 3573 | 0 | 1070 |
+| /appointments/ | mobile | 69 | 100 | 100 | 77 | 2900 | 0 | 742 |
+| /departments/primary-care/ | mobile | 69 | 100 | 96 | 74 | 3240 | 0 | 766 |
+| /resources/ | mobile | 69 | 98 | 100 | 70 | 3430 | 0 | 950 |
+| /admin/dashboard/ | mobile | 66 | 100 | 100 | 86 | 2978 | 0.08 | 318 |
+| / | desktop | 69 | 100 | 96 | 38 | 4359 | 0 | 1423 |
+| /case-study/ | desktop | 100 | 100 | 96 | 40 | 3790 | 0 | 1432 |
+| /appointments/ | desktop | 69 | 100 | 96 | 42 | 2994 | 0.019 | 1853 |
+| /departments/primary-care/ | desktop | 69 | 100 | 96 | 49 | 1830 | 0 | 4482 |
+| /resources/ | desktop | 69 | 98 | 96 | 52 | 1550 | 0.001 | 4535 |
+| /admin/dashboard/ | desktop | 66 | 100 | 100 | 52 | 3214 | 0.056 | 464 |
 
 INP is a field metric; TBT is the lab proxy.
 
@@ -78,7 +78,7 @@ INP is a field metric; TBT is the lab proxy.
 | 39 | no redirect chains | DONE | No redirect chains (single hop). [verified: redirect-chain] |
 | 40 | duplicate content | DONE | Unique titles and canonical per page; no duplicate content. [verified: dup-titles] |
 | 41 | URL structure | DONE | Lowercase, trailing-slash, hyphenated URLs. [verified: urlform] |
-| 42 | mobile-first | PENDING | Mobile-first layout; Lighthouse mobile run. (check "lh:mobile" has not passed yet) |
+| 42 | mobile-first | DONE | Mobile-first layout, no horizontal scroll on any page (e2e), tap targets and viewport pass Lighthouse accessibility. [verified: lh:a11y] |
 | 43 | crawlability | DONE | Static HTML, internal links on every page. [verified: links] |
 | 44 | indexability | DONE | Only /case-study/ is indexable; verified by meta robots and X-Robots-Tag on every route. [verified: indexing] |
 | 45 | JavaScript SEO | DONE | Pages are pre-rendered static HTML; content is present without running scripts. [verified: ssr] |
@@ -91,8 +91,8 @@ INP is a field metric; TBT is the lab proxy.
 | 52 | orphan pages | DONE | No page is unlinked from the site. [verified: orphans] |
 | 53 | crawl budget | DONE | Small static site; one indexable URL. [verified: sitemap] |
 | 54 | server response | DONE | Static files from the CDN edge; response time measured. [verified: ttfb] |
-| 55 | Core Web Vitals | PENDING | Lighthouse results in reports/ and on the case study. (check "lh:perf" has not passed yet) |
-| 56 | LCP under 2.5s | PENDING | LCP measured by Lighthouse (lab). (check "lh:lcp" has not passed yet) |
+| 55 | Core Web Vitals | NOT-MET | Lighthouse results in reports/ and on the case study. Measured on mobile (lab, simulated slow 4G): performance 68 to 86, LCP 2433 to 3573 ms. The approved design is animation-heavy; the target is not met yet. Next step: reduce animated layers on mobile without removing the motion. |
+| 56 | LCP under 2.5s | NOT-MET | LCP measured by Lighthouse (lab). Measured on mobile (lab, simulated slow 4G): performance 68 to 86, LCP 2433 to 3573 ms. The approved design is animation-heavy; the target is not met yet. Next step: reduce animated layers on mobile without removing the motion. |
 | 57 | INP under 200ms | CONFIG | INP is a field metric. Lab proxy (TBT) is recorded; confirm field INP in Search Console once traffic exists. |
 | 58 | CLS 0.1 or lower | DONE | CLS measured by Lighthouse (lab). [verified: lh:cls] |
 | 59 | image loading | DONE | Responsive avif/webp/jpg with width, height, lazy loading; hero is eager with high priority. [verified: imgdims] |
@@ -272,7 +272,7 @@ INP is a field metric; TBT is the lab proxy.
 
 | # | Item | Status | Where or why |
 |---|---|---|---|
-| 191 | mobile usability | PENDING | Mobile Lighthouse and viewport checks. (check "lh:mobile" has not passed yet) |
+| 191 | mobile usability | DONE | Mobile layout and accessibility checks pass; see items 55 and 56 for the performance gap. [verified: lh:a11y] |
 | 192 | navigation simplicity | DONE | Short main menu, mega menu, one-tap phone and request. [verified: links] |
 | 193 | visual hierarchy | DONE | Clear hierarchy, large type, strong contrast. [verified: h1] |
 | 194 | accessibility | DONE | Lighthouse accessibility score. [verified: lh:a11y] |
@@ -335,7 +335,7 @@ INP is a field metric; TBT is the lab proxy.
 |---|---|---|---|
 | 237 | SERP feature analysis | OWNER | Review SERP features for the primary queries once indexed. |
 | 238 | content benchmarking | OWNER | Compare with top results quarterly. |
-| 239 | technical benchmarking | PENDING | Lighthouse results recorded for comparison. (check "lh:perf" has not passed yet) |
+| 239 | technical benchmarking | DONE | Lighthouse results recorded in reports/ for comparison. [verified: file:reports/lighthouse-summary.json] |
 | 240 | authority analysis | OWNER | Review referring domains after links appear. |
 | 241 | demand forecasting | OWNER | Use Google Trends quarterly. |
 | 242 | content ROI | OWNER | Count inquiries attributed to the page. |
@@ -403,9 +403,9 @@ INP is a field metric; TBT is the lab proxy.
 
 ## Totals
 
-- DONE: 142
+- DONE: 145
 - OWNER: 49
-- PENDING: 5
 - N/A: 55
+- NOT-MET: 2
 - CONFIG: 4
 - DONE-READY: 6

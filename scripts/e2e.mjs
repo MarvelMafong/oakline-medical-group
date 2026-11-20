@@ -11,7 +11,18 @@ const browser = await chromium.launch({ channel: 'msedge', headless: true });
 const errors = [];
 async function ctx(w, h, mobile = false) {
   const c = await browser.newContext({ viewport: { width: w, height: h }, isMobile: mobile, deviceScaleFactor: 1 });
-  const p = await c.newPage();
+  if (BASE.startsWith('https')) await c.route('**/*', async (route) => {
+    const rq = route.request();
+    for (let a = 0; a < 4; a++) {
+      try {
+        const r = await fetch(rq.url(), { method: rq.method(), headers: { 'accept-encoding': 'gzip' }, redirect: 'manual', signal: AbortSignal.timeout(90000) });
+        const h = Object.fromEntries([...r.headers.entries()].filter(([k]) => !['content-encoding', 'content-length', 'transfer-encoding'].includes(k)));
+        return await route.fulfill({ status: r.status, headers: h, body: Buffer.from(await r.arrayBuffer()) });
+      } catch (e) { await new Promise((x) => setTimeout(x, 1500)); }
+    }
+    await route.abort();
+  });
+  const p = await c.newPage(); const og = p.goto.bind(p); p.goto = (u, o) => og(u, { waitUntil: "domcontentloaded", ...o }); p.setDefaultTimeout(120000); p.setDefaultNavigationTimeout(120000);
   p.on('console', (m) => { if (m.type() === 'error' && !/Failed to load resource/.test(m.text())) errors.push(`${p.url()} ${m.text()}`); });
   p.on('response', (r) => { if (r.status() >= 400 && !/__next\.|\/nope\//.test(r.url())) errors.push(`HTTP ${r.status()} ${r.url()}`); });
   p.on('pageerror', (e) => errors.push(`${p.url()} ${e.message}`));
