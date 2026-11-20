@@ -1,6 +1,6 @@
 {
  "base": "http://localhost:4173",
- "at": "2026-11-20T13:53:14.783Z",
+ "at": "2026-11-20T14:25:51.204Z",
  "routes": 41,
  "results": {
   "status": true,
@@ -22,7 +22,7 @@
   "casestudy-schema": true,
   "casestudy-links": true,
   "rcheck": true,
-  "caseSize": 93320,
+  "caseSize": 99220,
   "caseimgs": true,
   "caseImgCount": 4,
   "cache-html": true,
@@ -54,7 +54,7 @@
    "title": "About Oakline Medical Group",
    "desc": "Oakline is a multi-specialty outpatient clinic in Sandy Springs built around one idea: care that connects every stage of life.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/about/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/about/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -62,7 +62,7 @@
    "title": "Dashboard | Oakline Admin",
    "desc": "Staff dashboard with live charts from local demo data.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/admin/dashboard/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/admin/dashboard/",
    "h1": 0,
    "xr": "noindex, follow"
   },
@@ -70,7 +70,7 @@
    "title": "Staff sign in | Oakline Medical Group",
    "desc": "Staff sign in for the Oakline demonstration site. Demo access is shown on the page.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/admin/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/admin/",
    "h1": 0,
    "xr": "noindex, follow"
   },
@@ -78,7 +78,7 @@
    "title": "Messages | Oakline Admin",
    "desc": "Staff inbox for contact messages sent from the Oakline contact page.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/admin/messages/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/admin/messages/",
    "h1": 0,
    "xr": "noindex, follow"
   },
@@ -86,7 +86,7 @@
    "title": "Appointment requests | Oakline Admin",
    "desc": "Staff view of appointment requests with search, filters and bulk actions.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/admin/requests/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/admin/requests/",
    "h1": 0,
    "xr": "noindex, follow"
   },
@@ -94,7 +94,7 @@
    "title": "Request an Appointment | Oakline Medical Group",
    "desc": "Request an appointment with Oakline Medical Group. Choose a department, a doctor and a time. Staff confirm every request.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/appointments/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/appointments/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -102,7 +102,7 @@
    "title": "Check, Reschedule or Cancel a Request | Oakline Medical Group",
    "desc": "Look up an Oakline appointment request with your reference and last name. See its status, reschedule or cancel.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/appointments/manage/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/appointments/manage/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -110,7 +110,7 @@
    "title": "Healthcare Website Design Case Study: Clinic Website by TekGemm Studio",
    "desc": "A healthcare website built by TekGemm Studio: appointment requests, doctor pages, staff admin, accessible forms. Oakline is a fictional portfolio clinic.",
    "robots": "index, follow",
-   "canon": "https://oakline-medical-group.vercel.app/case-study/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/case-study/",
    "h1": 1,
    "xr": "index, follow",
    "sameAs": true
@@ -119,7 +119,7 @@
    "title": "Contact and Location | Oakline Medical Group",
    "desc": "Phone, hours and location for Oakline Medical Group in Sandy Springs, Georgia, plus a contact form.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/contact/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/contact/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -127,7 +127,7 @@
    "title": "Cardiology in Sandy Springs, GA | Oakline Medical Group",
    "desc": "Cardiology at Oakline focuses on clear explanations. Your cardiologist works with your primary care doctor, so every part of your heart care is shared and ",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/departments/cardiology/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/departments/cardiology/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -135,7 +135,7 @@
    "title": "Dermatology in Sandy Springs, GA | Oakline Medical Group",
    "desc": "Dermatology offers skin care from the first question to the follow-up visit, with careful exams and plans that are easy to follow at home.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/departments/dermatology/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/departments/dermatology/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -143,7 +143,7 @@
    "title": "Diagnostics in Sandy Springs, GA | Oakline Medical Group",
    "desc": "Diagnostics brings tests and imaging under the same roof as your care team, so results reach your doctor quickly and you are not left wondering where they ",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/departments/diagnostics/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/departments/diagnostics/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -151,7 +151,7 @@
    "title": "Departments | Oakline Medical Group",
    "desc": "Six connected departments: Primary Care, Women&#x27;s Health, Pediatrics, Cardiology, Dermatology and Diagnostics. One team, one plan.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/departments/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/departments/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -159,7 +159,7 @@
    "title": "Pediatrics in Sandy Springs, GA | Oakline Medical Group",
    "desc": "Pediatrics at Oakline makes visits easy for children and calm for parents, with bright rooms, clear explanations and one team for the whole family.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/departments/pediatrics/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/departments/pediatrics/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -167,7 +167,7 @@
    "title": "Primary Care in Sandy Springs, GA | Oakline Medical Group",
    "desc": "Primary care is the home base for your health. Your Oakline primary care doctor gets to know you, keeps your records in one place and connects you to the o",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/departments/primary-care/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/departments/primary-care/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -175,7 +175,7 @@
    "title": "Women&#x27;s Health in Sandy Springs, GA | Oakline Medical Group",
    "desc": "Women&#x27;s Health offers private, unhurried visits for every season of life, from routine exams to planning ahead, with a team that explains each step.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/departments/womens-health/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/departments/womens-health/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -183,7 +183,7 @@
    "title": "Dr. Casey Morgan | Oakline Medical Group",
    "desc": "Dr. Morgan explains heart health in plain words and works closely with your primary care doctor, so every part of your care is shared.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/doctors/casey-morgan/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/doctors/casey-morgan/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -191,7 +191,7 @@
    "title": "Dr. Elena Brooks | Oakline Medical Group",
    "desc": "Dr. Brooks provides private, respectful care for women at every stage. She takes time to explain options and welcomes questions.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/doctors/elena-brooks/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/doctors/elena-brooks/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -199,7 +199,7 @@
    "title": "Our Doctors | Oakline Medical Group",
    "desc": "Meet the people behind your care. Filter Oakline doctors by department, language and availability.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/doctors/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/doctors/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -207,7 +207,7 @@
    "title": "Dr. Jordan Ellis | Oakline Medical Group",
    "desc": "Dr. Ellis leads our Primary Care team and likes to start every visit by listening. Their approach is simple: explain things in plain words, plan together a",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/doctors/jordan-ellis/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/doctors/jordan-ellis/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -215,7 +215,7 @@
    "title": "Dr. Maya Okafor | Oakline Medical Group",
    "desc": "Dr. Okafor cares for adults and teens and enjoys long-term relationships with patients. She keeps visits unhurried and follow-ups clear.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/doctors/maya-okafor/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/doctors/maya-okafor/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -223,7 +223,7 @@
    "title": "Dr. Naomi Hart | Oakline Medical Group",
    "desc": "Dr. Hart provides careful skin exams for adults and children and builds plans that fit into daily life.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/doctors/naomi-hart/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/doctors/naomi-hart/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -231,7 +231,7 @@
    "title": "Dr. Sam Rivera | Oakline Medical Group",
    "desc": "Dr. Rivera makes visits friendly for children and calm for parents. They answer questions without rushing and coordinate with Primary Care for the whole fa",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/doctors/sam-rivera/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/doctors/sam-rivera/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -239,7 +239,7 @@
    "title": "Dr. Samuel Whitaker | Oakline Medical Group",
    "desc": "Dr. Whitaker has a calm, teaching style. He likes patients to leave knowing what was found, what it means and what happens next.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/doctors/samuel-whitaker/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/doctors/samuel-whitaker/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -247,7 +247,7 @@
    "title": "Dr. Tara Lindqvist | Oakline Medical Group",
    "desc": "Dr. Lindqvist supports women through life changes with clear information and steady follow-up.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/doctors/tara-lindqvist/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/doctors/tara-lindqvist/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -255,7 +255,7 @@
    "title": "Dr. Theo Vance | Oakline Medical Group",
    "desc": "Dr. Vance oversees tests and imaging at Oakline and makes sure results reach your care team quickly.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/doctors/theo-vance/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/doctors/theo-vance/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -263,7 +263,7 @@
    "title": "Primary Care and More in Sandy Springs, GA | Oakline Medical Group",
    "desc": "Approachable, coordinated outpatient care in Sandy Springs, Georgia. Request an appointment with Oakline Medical Group, a fictional clinic.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -271,7 +271,7 @@
    "title": "Insurance and Billing | Oakline Medical Group",
    "desc": "How insurance and billing work at Oakline: coverage, estimates, statements and who to call with questions.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/insurance-billing/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/insurance-billing/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -279,7 +279,7 @@
    "title": "Patient Info: Your First Visit | Oakline Medical Group",
    "desc": "A first visit guide: what to bring, accessibility, parking and directions, and answers to common questions.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/patient-info/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/patient-info/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -287,7 +287,7 @@
    "title": "Privacy | Oakline Medical Group",
    "desc": "This website is a demonstration. It sets no cookies beyond local demo storage in your browser and sends nothing to a server.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/privacy/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/privacy/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -295,7 +295,7 @@
    "title": "A plain guide to your skin check | Oakline",
    "desc": "What a skin check usually involves, and how to make it comfortable and useful.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/resources/a-plain-guide-to-your-skin-check/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/resources/a-plain-guide-to-your-skin-check/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -303,7 +303,7 @@
    "title": "Getting the most from a checkup | Oakline",
    "desc": "Simple ways to prepare, so a routine checkup turns into a plan you can follow.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/resources/getting-the-most-from-a-checkup/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/resources/getting-the-most-from-a-checkup/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -311,7 +311,7 @@
    "title": "Helping your child feel ready for a doctor visit | Oakline",
    "desc": "Gentle, honest ways to prepare children of different ages for a visit.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/resources/helping-your-child-feel-ready-for-a-doctor-visit/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/resources/helping-your-child-feel-ready-for-a-doctor-visit/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -319,7 +319,7 @@
    "title": "How an appointment request works | Oakline",
    "desc": "What happens after you send a request, and why a request is not a confirmed appointment.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/resources/how-appointment-requests-work/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/resources/how-appointment-requests-work/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -327,7 +327,7 @@
    "title": "Health Resources | Oakline Medical Group",
    "desc": "General, plain-language reading to help you prepare for visits. It never replaces advice from your own doctor.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/resources/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/resources/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -335,7 +335,7 @@
    "title": "Keeping a simple medicine list | Oakline",
    "desc": "A one-page list that makes every visit smoother, for you and for anyone who helps you.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/resources/keeping-a-simple-medicine-list/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/resources/keeping-a-simple-medicine-list/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -343,7 +343,7 @@
    "title": "Questions worth asking your doctor | Oakline",
    "desc": "A handful of open questions that help you leave a visit knowing what happens next.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/resources/questions-worth-asking-your-doctor/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/resources/questions-worth-asking-your-doctor/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -351,7 +351,7 @@
    "title": "Talking about heart health, step by step | Oakline",
    "desc": "A calm way to prepare for a conversation about your heart and what matters to you.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/resources/talking-about-heart-health/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/resources/talking-about-heart-health/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -359,7 +359,7 @@
    "title": "What to bring to your first visit | Oakline",
    "desc": "A short checklist that makes check-in quick and leaves more time for your questions.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/resources/what-to-bring-to-your-first-visit/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/resources/what-to-bring-to-your-first-visit/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -367,7 +367,7 @@
    "title": "What to expect from a test or scan | Oakline",
    "desc": "How to prepare, what the day looks like and how results reach your doctor.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/resources/what-to-expect-from-a-test-or-scan/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/resources/what-to-expect-from-a-test-or-scan/",
    "h1": 1,
    "xr": "noindex, follow"
   },
@@ -375,7 +375,7 @@
    "title": "Terms | Oakline Medical Group",
    "desc": "Terms for using this demonstration website. Oakline Medical Group is a fictional clinic and gives no medical advice.",
    "robots": "noindex, follow",
-   "canon": "https://oakline-medical-group.vercel.app/terms/",
+   "canon": "https://oakline-medical-group-zeta.vercel.app/terms/",
    "h1": 1,
    "xr": "noindex, follow"
   }

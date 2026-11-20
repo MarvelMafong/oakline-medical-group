@@ -51,7 +51,7 @@ export default function Home() {
   const lead = DOCS.filter((d) => ['jordan-ellis', 'sam-rivera', 'casey-morgan'].includes(d.slug));
   return (
     <>
-      <JsonLd data={{ '@context': 'https://schema.org', '@type': 'WebSite', name: 'Oakline Medical Group', url: 'https://oakline-medical-group.vercel.app/', description: 'A fictional clinic website built as a portfolio project by TekGemm Studio.' }} />
+      <JsonLd data={{ '@context': 'https://schema.org', '@type': 'WebSite', name: 'Oakline Medical Group', url: 'https://oakline-medical-group-zeta.vercel.app/', description: 'A fictional clinic website built as a portfolio project by TekGemm Studio.' }} />
       <section className="sec t-cream hero bgi" style={SB('bg-silk-1', 0.45)}>
         <div className="wrap">
           <div className="hero2">

@@ -48,7 +48,7 @@ export default function Page() {
               </div>
               <p className="cta-note"><b>Oakline Medical Group is a fictional clinic</b> created as a portfolio project. No real patients, doctors or reviews appear on it.</p>
             </div>
-            <div className="shot rv"><img src="/images/case-home.webp" width={1280} height={800} alt="Screenshot of the Oakline Medical Group home page on desktop" fetchPriority="high" /></div>
+            <div className="shot rv"><img src="/images/case-home.webp" srcSet="/images/case-home-640.webp 640w, /images/case-home.webp 1280w" sizes="(min-width:900px) 520px, 92vw" width={1280} height={800} alt="Screenshot of the Oakline Medical Group home page on desktop" fetchPriority="high" /></div>
           </div>
         </div>
       </section>
@@ -87,9 +87,9 @@ export default function Page() {
             {['Appointment request flow with a calendar, slot picker, save and resume, confirmation reference and calendar download', 'Request lookup to check status, reschedule or cancel', 'Six department pages from one template, each with services, doctors and FAQs', 'Doctor directory with filters and profile pages', 'Staff admin: requests table with search, filters, sorting, bulk actions, notes and CSV export', 'Dashboard with live charts built as inline SVG', 'Health resources with search, category and tag filters and full articles', 'Accessible contact form with a staff inbox', 'First visit guide, insurance and billing page, privacy and terms'].map((x) => <li key={x} className="rv" style={{ background: 'var(--off)', boxShadow: 'var(--sh)', borderRadius: 16, justifyContent: 'flex-start', gap: 10 }}><Icon n="check" size={22} />{x}</li>)}
           </ul>
           <div className="shots">
-            <figure className="shot rv"><img src="/images/case-booking.webp" width={1280} height={800} loading="lazy" alt="Screenshot of the appointment request flow on desktop" /><figcaption>The appointment request flow.</figcaption></figure>
+            <figure className="shot rv"><img src="/images/case-booking.webp" srcSet="/images/case-booking-640.webp 640w, /images/case-booking.webp 1280w" sizes="(min-width:900px) 520px, 92vw" width={1280} height={800} loading="lazy" alt="Screenshot of the appointment request flow on desktop" /><figcaption>The appointment request flow.</figcaption></figure>
             <figure className="shot rv"><img src="/images/case-mobile.webp" width={390} height={844} loading="lazy" alt="Screenshot of the home page on a phone" /><figcaption>The home page on a phone.</figcaption></figure>
-            <figure className="shot rv" style={{ gridColumn: '1/-1' }}><img src="/images/case-admin.webp" width={1280} height={800} loading="lazy" alt="Screenshot of the staff dashboard with charts" /><figcaption>The staff dashboard.</figcaption></figure>
+            <figure className="shot rv" style={{ gridColumn: '1/-1' }}><img src="/images/case-admin.webp" srcSet="/images/case-admin-640.webp 640w, /images/case-admin.webp 1280w" sizes="(min-width:900px) 520px, 92vw" width={1280} height={800} loading="lazy" alt="Screenshot of the staff dashboard with charts" /><figcaption>The staff dashboard.</figcaption></figure>
           </div>
         </div>
       </section>
@@ -106,14 +106,14 @@ export default function Page() {
             <h2 style={{ fontSize: 24 }}>Measured outcomes</h2>
             {m.measured ? (
               <>
-                <p className="help" style={{ margin: '6px 0 10px' }}>Lighthouse results from the live site, recorded {m.date}. {m.target}</p>
+                <p className="help" style={{ margin: '6px 0 10px' }}>Lighthouse results from the production build, recorded {m.date}. {m.target}</p>
                 <div className="tblwrap" style={{ boxShadow: 'none' }} tabIndex={0} role="region" aria-label="Lighthouse results. Scroll sideways on small screens.">
-                  <table className="dtable"><thead><tr><th scope="col">Page</th><th scope="col">SEO</th><th scope="col">Accessibility</th><th scope="col">Best practices</th><th scope="col">Mobile performance</th><th scope="col">LCP</th><th scope="col">CLS</th></tr></thead>
-                    <tbody>{m.scores.map((s) => <tr key={s.page}><th scope="row">{s.page}</th><td>{s.seo}</td><td>{s.accessibility}</td><td>{s.bestPractices}</td><td>{s.performance}</td><td>{s.lcp}</td><td>{s.cls}</td></tr>)}</tbody></table>
+                  <table className="dtable"><thead><tr><th scope="col">Page</th><th scope="col">SEO</th><th scope="col">Accessibility</th><th scope="col">Best practices</th><th scope="col">Mobile performance</th><th scope="col">LCP</th><th scope="col">CLS</th><th scope="col">TBT</th></tr></thead>
+                    <tbody>{m.scores.map((s) => <tr key={s.page}><th scope="row">{s.page}</th><td>{s.seo}</td><td>{s.accessibility}</td><td>{s.bestPractices}</td><td>{s.performance}</td><td>{s.lcp}</td><td>{s.cls}</td><td>{s.tbt}</td></tr>)}</tbody></table>
                 </div>
               </>
             ) : <p style={{ marginTop: 8 }}>Scores are recorded from the live site after each release.</p>}
-            <p className="help" style={{ marginTop: 10 }}>These are lab measurements from the live build. They are not claims about any client.</p>
+            <p className="help" style={{ marginTop: 10 }}>These are lab measurements of this build. They are not claims about any client.</p>
           </div>
         </div>
       </section>

@@ -1,1 +1,57 @@
-{"measured":false,"date":"","target":"","scores":[]}
+{
+ "measured": true,
+ "date": "2026-11-20",
+ "target": "Mobile lab runs of the production build with simulated slow 4G. The design is animation-rich, so mobile performance is below the 90 target. SEO is lower on clinic pages only because they are deliberately set to noindex.",
+ "scores": [
+  {
+   "page": "Home (noindex by design)",
+   "seo": 69,
+   "accessibility": 100,
+   "bestPractices": 96,
+   "performance": 71,
+   "lcp": "2.4 s",
+   "cls": "0",
+   "tbt": "1619 ms"
+  },
+  {
+   "page": "Case study",
+   "seo": 100,
+   "accessibility": 100,
+   "bestPractices": 100,
+   "performance": 68,
+   "lcp": "3.6 s",
+   "cls": "0",
+   "tbt": "1070 ms"
+  },
+  {
+   "page": "Request an Appointment (noindex by design)",
+   "seo": 69,
+   "accessibility": 100,
+   "bestPractices": 100,
+   "performance": 77,
+   "lcp": "2.9 s",
+   "cls": "0",
+   "tbt": "742 ms"
+  },
+  {
+   "page": "Primary Care department (noindex by design)",
+   "seo": 69,
+   "accessibility": 100,
+   "bestPractices": 96,
+   "performance": 74,
+   "lcp": "3.2 s",
+   "cls": "0",
+   "tbt": "766 ms"
+  },
+  {
+   "page": "Health Resources (noindex by design)",
+   "seo": 69,
+   "accessibility": 98,
+   "bestPractices": 100,
+   "performance": 70,
+   "lcp": "3.4 s",
+   "cls": "0",
+   "tbt": "950 ms"
+  }
+ ]
+}

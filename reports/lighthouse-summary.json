@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T12:37:53.875Z",
+ "at": "2026-11-20T14:22:38.867Z",
  "base": "http://localhost:4173",
  "rows": [
   {
@@ -8,21 +8,21 @@
    "seo": 69,
    "accessibility": 100,
    "bestPractices": 96,
-   "performance": 63,
-   "lcpMs": 3571,
+   "performance": 71,
+   "lcpMs": 2433,
    "cls": 0,
-   "tbtMs": 1501
+   "tbtMs": 1619
   },
   {
    "page": "/case-study/",
    "mobile": true,
    "seo": 100,
    "accessibility": 100,
-   "bestPractices": 96,
-   "performance": 56,
-   "lcpMs": 5449,
+   "bestPractices": 100,
+   "performance": 68,
+   "lcpMs": 3573,
    "cls": 0,
-   "tbtMs": 1147
+   "tbtMs": 1070
   },
   {
    "page": "/appointments/",
@@ -30,10 +30,10 @@
    "seo": 69,
    "accessibility": 100,
    "bestPractices": 100,
-   "performance": 67,
-   "lcpMs": 3198,
-   "cls": 0.063,
-   "tbtMs": 1309
+   "performance": 77,
+   "lcpMs": 2900,
+   "cls": 0,
+   "tbtMs": 742
   },
   {
    "page": "/departments/primary-care/",
@@ -41,10 +41,10 @@
    "seo": 69,
    "accessibility": 100,
    "bestPractices": 96,
-   "performance": 66,
-   "lcpMs": 3478,
+   "performance": 74,
+   "lcpMs": 3240,
    "cls": 0,
-   "tbtMs": 1336
+   "tbtMs": 766
   },
   {
    "page": "/resources/",
@@ -52,10 +52,10 @@
    "seo": 69,
    "accessibility": 98,
    "bestPractices": 100,
-   "performance": 81,
-   "lcpMs": 3313,
+   "performance": 70,
+   "lcpMs": 3430,
    "cls": 0,
-   "tbtMs": 437
+   "tbtMs": 950
   },
   {
    "page": "/admin/dashboard/",
@@ -63,10 +63,10 @@
    "seo": 66,
    "accessibility": 100,
    "bestPractices": 100,
-   "performance": 72,
-   "lcpMs": 3095,
+   "performance": 86,
+   "lcpMs": 2978,
    "cls": 0.08,
-   "tbtMs": 881
+   "tbtMs": 318
   },
   {
    "page": "/",
@@ -74,10 +74,10 @@
    "seo": 69,
    "accessibility": 100,
    "bestPractices": 96,
-   "performance": 35,
-   "lcpMs": 3966,
+   "performance": 38,
+   "lcpMs": 4359,
    "cls": 0,
-   "tbtMs": 17327
+   "tbtMs": 1423
   },
   {
    "page": "/case-study/",
@@ -85,10 +85,10 @@
    "seo": 100,
    "accessibility": 100,
    "bestPractices": 96,
-   "performance": 33,
-   "lcpMs": 4691,
-   "cls": 0.001,
-   "tbtMs": 3977
+   "performance": 40,
+   "lcpMs": 3790,
+   "cls": 0,
+   "tbtMs": 1432
   },
   {
    "page": "/appointments/",
@@ -96,10 +96,10 @@
    "seo": 69,
    "accessibility": 100,
    "bestPractices": 96,
-   "performance": 41,
-   "lcpMs": 3091,
+   "performance": 42,
+   "lcpMs": 2994,
    "cls": 0.019,
-   "tbtMs": 2185
+   "tbtMs": 1853
   },
   {
    "page": "/departments/primary-care/",
@@ -107,10 +107,10 @@
    "seo": 69,
    "accessibility": 100,
    "bestPractices": 96,
-   "performance": 39,
-   "lcpMs": 3737,
+   "performance": 49,
+   "lcpMs": 1830,
    "cls": 0,
-   "tbtMs": 2921
+   "tbtMs": 4482
   },
   {
    "page": "/resources/",
@@ -118,10 +118,10 @@
    "seo": 69,
    "accessibility": 98,
    "bestPractices": 96,
-   "performance": 38,
-   "lcpMs": 3586,
+   "performance": 52,
+   "lcpMs": 1550,
    "cls": 0.001,
-   "tbtMs": 2084
+   "tbtMs": 4535
   },
   {
    "page": "/admin/dashboard/",
@@ -129,10 +129,10 @@
    "seo": 66,
    "accessibility": 100,
    "bestPractices": 100,
-   "performance": 67,
-   "lcpMs": 3071,
+   "performance": 52,
+   "lcpMs": 3214,
    "cls": 0.056,
-   "tbtMs": 337
+   "tbtMs": 464
   }
  ]
 }

@@ -32,7 +32,7 @@ for (const f of files) {
   }
   meta[name].ws = ws;
 }
-for (const f of fs.existsSync('shots') ? fs.readdirSync('shots') : []) { const o = 'public/images/case-' + f.replace(/^case-/, '').replace('.png', '.webp'); if (!fs.existsSync(o)) await sharp('shots/' + f).webp({ quality: 80 }).toFile(o); }
+for (const f of fs.existsSync('shots') ? fs.readdirSync('shots') : []) { const o = 'public/images/case-' + f.replace(/^case-/, '').replace('.png', '.webp'); if (!fs.existsSync(o)) await sharp('shots/' + f).webp({ quality: 80 }).toFile(o); const o6 = o.replace('.webp', '-640.webp'); if (!fs.existsSync(o6)) await sharp('shots/' + f).resize({ width: 640 }).webp({ quality: 78 }).toFile(o6); }
 fs.mkdirSync('src/data', { recursive: true });
 fs.writeFileSync('src/data/images.json', JSON.stringify(meta, null, 1));
 console.log('images ready:', Object.keys(meta).length);
