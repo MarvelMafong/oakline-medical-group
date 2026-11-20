@@ -1,0 +1,13 @@
+# TekGemm Studio
+
+> TekGemm Studio is a web design and development studio led by Marvel Mafong. It designs and builds fast, accessible websites for clinics, medical practices and healthcare businesses.
+
+## Key pages
+- [Healthcare website case study: Oakline Medical Group](https://oakline-medical-group.vercel.app/case-study/): A portfolio project. A complete clinic website with an appointment request flow, department and doctor pages, a staff admin with dashboard, health resources and accessible forms. Oakline is a fictional clinic.
+- [TekGemm Studio](https://tekgemmstudio.com): The studio website. Contact the studio here about a clinic or healthcare website.
+- [Marvel Mafong](https://marvelmafong.work): Portfolio of the designer and developer.
+
+## Facts
+- Oakline Medical Group is a fictional clinic created as a portfolio project. It is not a real healthcare provider and gives no medical advice.
+- Only the case study page is intended for search indexing. All other pages are marked noindex.
+- Technical approach: static site, TypeScript, accessible by design (WCAG 2.2 AA targets), no third-party trackers.

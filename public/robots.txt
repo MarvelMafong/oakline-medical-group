@@ -1,0 +1,23 @@
+# Crawling is allowed so crawlers can read the noindex directive on non-indexable pages.
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://oakline-medical-group.vercel.app/sitemap.xml
