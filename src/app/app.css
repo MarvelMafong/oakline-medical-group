@@ -58,7 +58,7 @@
 @container board (min-width:900px){.dgrid{grid-template-columns:repeat(3,1fr)}}
 .dcard{display:grid;gap:6px;align-content:start;text-decoration:none;color:var(--ink);background:linear-gradient(165deg,#fff,#EAEFF8);border-radius:26px;overflow:hidden;box-shadow:var(--sh);padding:0 0 18px;transition:transform .5s var(--ease),box-shadow .5s}
 .dcard:hover{transform:translateY(-8px);box-shadow:var(--sh2)}
-.dcard .pimg{border-radius:0;margin:0;aspect-ratio:4/3;box-shadow:none}
+.dcard .pimg{border-radius:0;margin:0;aspect-ratio:4/5;box-shadow:none}
 .dcard>*:not(.pimg){margin-inline:18px}
 .dcard h3{font-size:21px;margin:8px 18px 0}
 .art{display:grid;gap:22px}
@@ -144,3 +144,6 @@ table.tbl{width:100%;border-collapse:collapse;font-size:15px;min-width:880px}
 /* performance: skip rendering and animation work for sections far off screen; drop permanent layer promotion */
 .sec:not(.hero):not(.pg){content-visibility:auto;contain-intrinsic-size:auto 800px}
 img{will-change:auto!important}
+
+/* the responsive <picture> wrapper must not create a box: image rules written for direct children keep working */
+picture{display:contents}

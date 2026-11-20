@@ -1,0 +1,176 @@
+{
+ "base": "http://localhost",
+ "at": "2026-11-20T18:00:50.103Z",
+ "pages": {
+  "/about/": {
+   "refs": 14,
+   "problems": []
+  },
+  "/admin/dashboard/": {
+   "refs": 1,
+   "problems": []
+  },
+  "/admin/": {
+   "refs": 1,
+   "problems": []
+  },
+  "/admin/messages/": {
+   "refs": 1,
+   "problems": []
+  },
+  "/admin/requests/": {
+   "refs": 1,
+   "problems": []
+  },
+  "/appointments/": {
+   "refs": 8,
+   "problems": []
+  },
+  "/appointments/manage/": {
+   "refs": 8,
+   "problems": []
+  },
+  "/case-study/": {
+   "refs": 16,
+   "problems": []
+  },
+  "/contact/": {
+   "refs": 9,
+   "problems": []
+  },
+  "/departments/cardiology/": {
+   "refs": 26,
+   "problems": []
+  },
+  "/departments/dermatology/": {
+   "refs": 21,
+   "problems": []
+  },
+  "/departments/diagnostics/": {
+   "refs": 21,
+   "problems": []
+  },
+  "/departments/": {
+   "refs": 45,
+   "problems": []
+  },
+  "/departments/pediatrics/": {
+   "refs": 24,
+   "problems": []
+  },
+  "/departments/primary-care/": {
+   "refs": 38,
+   "problems": []
+  },
+  "/departments/womens-health/": {
+   "refs": 43,
+   "problems": []
+  },
+  "/doctors/casey-morgan/": {
+   "refs": 20,
+   "problems": []
+  },
+  "/doctors/elena-brooks/": {
+   "refs": 13,
+   "problems": []
+  },
+  "/doctors/": {
+   "refs": 56,
+   "problems": []
+  },
+  "/doctors/jordan-ellis/": {
+   "refs": 30,
+   "problems": []
+  },
+  "/doctors/maya-okafor/": {
+   "refs": 27,
+   "problems": []
+  },
+  "/doctors/naomi-hart/": {
+   "refs": 20,
+   "problems": []
+  },
+  "/doctors/sam-rivera/": {
+   "refs": 18,
+   "problems": []
+  },
+  "/doctors/samuel-whitaker/": {
+   "refs": 13,
+   "problems": []
+  },
+  "/doctors/tara-lindqvist/": {
+   "refs": 13,
+   "problems": []
+  },
+  "/doctors/theo-vance/": {
+   "refs": 20,
+   "problems": []
+  },
+  "/": {
+   "refs": 143,
+   "problems": []
+  },
+  "/insurance-billing/": {
+   "refs": 8,
+   "problems": []
+  },
+  "/patient-info/": {
+   "refs": 9,
+   "problems": []
+  },
+  "/privacy/": {
+   "refs": 8,
+   "problems": []
+  },
+  "/resources/a-plain-guide-to-your-skin-check/": {
+   "refs": 34,
+   "problems": []
+  },
+  "/resources/getting-the-most-from-a-checkup/": {
+   "refs": 34,
+   "problems": []
+  },
+  "/resources/helping-your-child-feel-ready-for-a-doctor-visit/": {
+   "refs": 32,
+   "problems": []
+  },
+  "/resources/how-appointment-requests-work/": {
+   "refs": 32,
+   "problems": []
+  },
+  "/resources/": {
+   "refs": 64,
+   "problems": []
+  },
+  "/resources/keeping-a-simple-medicine-list/": {
+   "refs": 34,
+   "problems": []
+  },
+  "/resources/questions-worth-asking-your-doctor/": {
+   "refs": 34,
+   "problems": []
+  },
+  "/resources/talking-about-heart-health/": {
+   "refs": 32,
+   "problems": []
+  },
+  "/resources/what-to-bring-to-your-first-visit/": {
+   "refs": 32,
+   "problems": []
+  },
+  "/resources/what-to-expect-from-a-test-or-scan/": {
+   "refs": 34,
+   "problems": []
+  },
+  "/terms/": {
+   "refs": 8,
+   "problems": []
+  }
+ },
+ "summary": {
+  "uniqueImageUrls": 183,
+  "routes": 41,
+  "problems": 0,
+  "byKind": {}
+ }
+}

@@ -7,13 +7,17 @@ const WIDTHS = [360, 640, 960, 1280];
 const meta = {};
 // Staff portraits cropped from the team photos (square crops, so no new photos are invented).
 const CROPS = [
-  ['staff-brooks','team-blue-scrubs',0,95,235,235],['staff-okafor','team-blue-scrubs',95,110,225,225],
-  ['staff-vance','team-blue-scrubs',205,70,215,215],['staff-hart','team-blue-scrubs',310,105,205,205],
-  ['staff-lindqvist','team-blue-scrubs',420,120,200,200],['staff-whitaker','team-hallway',350,20,260,260],
+  // [name, source, left, top, width, height, upscale]  single-person, tight portrait crops. No second person at any edge.
+  ['staff-brooks', 'dept-womens-health', 20, 8, 250, 300, 2],
+  ['staff-whitaker', 'dept-cardiology', 75, 28, 250, 300, 2],
+  ['staff-vance', 'team-hallway', 410, 38, 178, 235, 3],
+  ['staff-okafor', 'team-blue-scrubs', 22, 138, 124, 150, 4],
+  ['staff-hart', 'team-blue-scrubs', 393, 114, 88, 146, 5],
+  ['staff-lindqvist', 'team-blue-scrubs', 494, 148, 122, 150, 4],
 ];
-for (const [out, from, left, top, width, height] of CROPS) {
+for (const [out, from, left, top, width, height, up] of CROPS) {
   const o = path.join(dir, out + '.jpg');
-  if (!fs.existsSync(o)) await sharp(path.join(dir, from + '.jpg')).extract({ left, top, width, height }).jpeg({ quality: 88 }).toFile(o);
+  if (!fs.existsSync(o)) await sharp(path.join(dir, from + '.jpg')).extract({ left, top, width, height }).resize({ width: width * up, kernel: 'lanczos3' }).sharpen({ sigma: 0.8 }).jpeg({ quality: 90 }).toFile(o);
 }
 const files = fs.readdirSync(dir).filter((f) => /^[a-z0-9-]+\.jpg$/.test(f) && !/-\d{3,4}\.jpg$/.test(f));
 for (const f of files) {

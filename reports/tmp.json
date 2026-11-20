@@ -1,0 +1,25 @@
+{
+ "base": "http://localhost:4173",
+ "at": "2026-11-20T17:55:16.489Z",
+ "pages": {
+  "/": {
+   "refs": 143,
+   "problems": [
+    {
+     "kind": "browser-1280-visibility-hidden",
+     "detail": "visit-clinic-space-360.avif"
+    }
+   ],
+   "images1280": 31,
+   "images390": 31
+  }
+ },
+ "summary": {
+  "uniqueImageUrls": 146,
+  "routes": 1,
+  "problems": 1,
+  "byKind": {
+   "browser-1280-visibility-hidden": 1
+  }
+ }
+}

@@ -30,7 +30,7 @@ export function DoctorDirectory() {
           <Link key={d.slug} className="dcard rv" href={`/doctors/${d.slug}/`}>
             <div className="pimg"><Img name={d.img} alt={`Portrait of ${d.name}`} sizes="(min-width:900px) 30vw, 92vw" style={d.imgPos ? { objectPosition: d.imgPos } : undefined} /></div>
             <h3>{d.name}</h3>
-            <p>{deptBySlug(d.dept)?.name} &middot; {d.role}</p>
+            <p>{d.role}</p>
             <div className="tags"><span className="tagpill">{d.languages.join(', ')}</span><span className="tagpill">{d.accepting ? 'Accepting new patients' : 'Existing patients'}</span></div>
           </Link>
         ))}

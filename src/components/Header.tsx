@@ -38,7 +38,7 @@ export function Header() {
               <Link href="/departments/" aria-current={cur('/departments')}>Departments <svg className="chev" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 5l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg></Link>
               <div className="mega">
                 <div className="ml">{dotone}</div>
-                <Link className="mf" href="/appointments/"><Img name="visit-clinic-space" alt="" sizes="260px" /><span className="mft"><b>Not sure where to start?</b><small>Request a time and our staff will point you to the right team.</small><em>Request an Appointment <Icon n="arrow" size={16} /></em></span></Link>
+                <Link className="mf" href="/appointments/"><Img name="visit-clinic-space" alt="" sizes="260px" eager /><span className="mft"><b>Not sure where to start?</b><small>Request a time and our staff will point you to the right team.</small><em>Request an Appointment <Icon n="arrow" size={16} /></em></span></Link>
               </div>
             </li>
             {NAV.map((n) => <li key={n.href}><Link href={n.href} aria-current={cur(n.href)}>{n.label}</Link></li>)}

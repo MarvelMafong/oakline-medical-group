@@ -65,7 +65,7 @@ export default function Home() {
               </div>
             </div>
             <div className="loops">
-              <figure className="lp a"><Img name="hero-consultation" eager sizes="(min-width:900px) 360px, 70vw" alt="A doctor in a white coat clasping hands with a laughing patient seated on an exam table" /></figure>
+              <figure className="lp a"><Img name="hero-consultation" eager priority sizes="(min-width:900px) 360px, 70vw" alt="A doctor in a white coat clasping hands with a laughing patient seated on an exam table" /></figure>
               <svg className="lring ra" viewBox="0 0 520 546" aria-hidden="true"><ellipse className="dr" pathLength={1} cx="182" cy="224" rx="192" ry="234" fill="none" stroke="#2448B8" strokeWidth="3.5" /></svg>
               <figure className="lp b"><Img name="hero-care-team" eager sizes="(min-width:900px) 270px, 52vw" alt="A pediatrician listening to a baby's heartbeat while the baby's mother smiles" /></figure>
               <svg className="lring rb" viewBox="0 0 520 546" aria-hidden="true"><ellipse className="dr d2" pathLength={1} cx="385" cy="382" rx="144" ry="174" fill="none" stroke="#F28A45" strokeWidth="3.5" /><g style={{ animation: 'spin 40s linear infinite', transformOrigin: '385px 382px' }}><circle cx="241" cy="382" r="8" fill="#F28A45" /></g></svg>
