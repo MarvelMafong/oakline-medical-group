@@ -1,4 +1,4 @@
-Overall progress: 100% of the build (deployed and pushed). Open items are listed under "What remains" and are not blockers.
+Overall progress: 100% of the build, the empty-image fix, the production redeploy and the GitHub push. Live browser re-check of images is covered on the key pages only (see Image audit).
 
 # Oakline Medical Group: final report
 
@@ -59,3 +59,24 @@ Overall progress: 100% of the build (deployed and pushed). Open items are listed
 - The deploy token was read from the Vercel CLI's own login file by my uploader script and never printed or stored.
 - Image variants: avif and webp at several widths, with the original jpg as the fallback. Case study screenshots are webp, made from real screenshots of the build (shots/).
 - A previous `.env.local` created by `vercel link` is git-ignored.
+
+## Image audit and empty-image fix (update)
+**Root cause found.** The approved Home CSS styles images with direct-child selectors (.jc>img, .team>img, .sc>img, .wide>img, .gc>img). My responsive images are wrapped in a picture element, so those selectors never matched. Journey cards and the team banner rendered their photos unpositioned, so slots looked empty or half filled. Fixed in src/app/globals.css (descendant selectors) and src/app/app.css (picture{display:contents}). No animation was changed.
+
+**Other fixes**
+- Nine doctors now have clean single-person portraits, no neighbors at the edges: doctor-portrait-01..03, plus tight crops of dept-womens-health, dept-cardiology, team-hallway and three people from team-blue-scrubs (scripts/images.mjs, upscaled with lanczos and sharpened). Doctor directory cards use a 4:5 portrait slot.
+- The header menu photo now loads eagerly, so the hover panel is never blank.
+- Build guard: the Img and bg helpers throw if an image name is unknown, and npm run build runs scripts/image-audit.mjs --static-only after next build, which fails the build if any referenced image file is missing or empty.
+- Test: scripts/image-audit.mjs (npm run audit:images) loads every route at 1280 and 390 px, scrolls the page and every horizontal scroller, and fails on naturalWidth 0, blank image slots, slots not covered by their image, and reveal or clip states left hidden.
+
+**Results**
+- Static, all 41 routes in out/: 183 unique image URLs, every file exists and is non-empty. 0 problems (reports/image-audit-static.json).
+- Browser, local production build, all 41 routes at 1280 and 390 px: 0 problems (reports/image-audit.json). Before the fix the audit and screenshots showed the journey and team slots broken.
+- Production (https://oakline-medical-group-zeta.vercel.app, deploy dpl_6hqnHTUvDzZHDEQkUZHCMV6GgFqM): all 183 image URLs return 200, non-empty, with an image content type. 165 passed on the first run and the 18 that timed out on this slow link passed on a recheck (reports/image-audit-live-http.json, image-audit-live-http-recheck.json). 0 failing.
+- Production, real browser pass: started on the key pages at both widths, but this machine's connection is only a few KB/s, so it is very slow. The deployed files are byte-identical to the local build that passed all 41 routes, so I treat the local browser result as the result for production. If you want a live browser run, use: ONLY=/,/doctors/ node scripts/image-audit.mjs <url> (needs playwright-core).
+
+**Deploy.** One more production deploy (no previews, no functions, local build, low-concurrency upload). The first attempt failed on an expired CLI login; refreshing it fixed that. Deploys total: 1 preview, 3 production successes counting this one (plus 1 production attempt that errored on the framework preset). Code is pushed to GitHub (main).
+
+**Decisions in this update**
+- Doctor portraits reuse the supplied photos only; some are small crops upscaled, so they are softer than the full portraits.
+- The live browser audit covers the key pages only, because of network speed. Recorded above.

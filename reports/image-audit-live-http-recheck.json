@@ -1,0 +1,98 @@
+{
+ "base": "https://oakline-medical-group-zeta.vercel.app",
+ "at": "2026-11-20T23:17:50.905Z",
+ "checked": 18,
+ "failing": 0,
+ "results": [
+  {
+   "url": "/images/visit-clinic-space-735.avif",
+   "ok": true,
+   "note": "15838 bytes image/avif"
+  },
+  {
+   "url": "/images/visit-clinic-space-360.webp",
+   "ok": true,
+   "note": "5690 bytes image/webp"
+  },
+  {
+   "url": "/images/visit-clinic-space-640.webp",
+   "ok": true,
+   "note": "14604 bytes image/webp"
+  },
+  {
+   "url": "/images/visit-clinic-space-735.webp",
+   "ok": true,
+   "note": "19642 bytes image/webp"
+  },
+  {
+   "url": "/images/visit-clinic-space.jpg",
+   "ok": true,
+   "note": "34648 bytes image/jpeg"
+  },
+  {
+   "url": "/images/visit-clinic-space-640.avif",
+   "ok": true,
+   "note": "11272 bytes image/avif"
+  },
+  {
+   "url": "/images/stage-older-adults.jpg",
+   "ok": true,
+   "note": "57269 bytes image/jpeg"
+  },
+  {
+   "url": "/images/stage-working-adults-640.avif",
+   "ok": true,
+   "note": "22329 bytes image/avif"
+  },
+  {
+   "url": "/images/stage-working-adults-736.avif",
+   "ok": true,
+   "note": "28943 bytes image/avif"
+  },
+  {
+   "url": "/images/stage-working-adults-640.webp",
+   "ok": true,
+   "note": "27864 bytes image/webp"
+  },
+  {
+   "url": "/images/gallery-open-lobby-360.avif",
+   "ok": true,
+   "note": "13614 bytes image/avif"
+  },
+  {
+   "url": "/images/gallery-open-lobby-720.avif",
+   "ok": true,
+   "note": "48637 bytes image/avif"
+  },
+  {
+   "url": "/images/gallery-open-lobby-640.webp",
+   "ok": true,
+   "note": "52682 bytes image/webp"
+  },
+  {
+   "url": "/images/gallery-open-lobby-720.webp",
+   "ok": true,
+   "note": "66790 bytes image/webp"
+  },
+  {
+   "url": "/images/team-hallway-640.avif",
+   "ok": true,
+   "note": "18478 bytes image/avif"
+  },
+  {
+   "url": "/images/team-hallway-360.webp",
+   "ok": true,
+   "note": "11158 bytes image/webp"
+  },
+  {
+   "url": "/images/team-hallway-640.webp",
+   "ok": true,
+   "note": "23114 bytes image/webp"
+  },
+  {
+   "url": "/images/team-hallway-736.avif",
+   "ok": true,
+   "note": "25091 bytes image/avif"
+  }
+ ]
+}

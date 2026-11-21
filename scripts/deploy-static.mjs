@@ -17,13 +17,13 @@ console.log('files', files.length, 'bytes', files.reduce((a, f) => a + f.size, 0
 const uniq = [...new Map(files.map((f) => [f.sha, f])).values()];
 let done = 0; const queue = [...uniq];
 async function up(f) {
-  for (let a = 1; a <= 8; a++) {
+  for (let a = 1; a <= 20; a++) {
     try {
       const r = await fetch(`https://api.vercel.com/v2/files?${Q}`, { method: 'POST', headers: { ...H, 'Content-Type': 'application/octet-stream', 'x-vercel-digest': f.sha, 'Content-Length': String(f.size) }, body: f.buf, signal: AbortSignal.timeout(120000) });
       if (r.ok || r.status === 409) return;
       if (r.status === 429 || r.status >= 500) throw new Error('status ' + r.status);
       throw new Error('fatal ' + r.status + ' ' + (await r.text()).slice(0, 200));
-    } catch (e) { if (String(e).includes('fatal')) throw e; await new Promise((s) => setTimeout(s, 1500 * a)); }
+    } catch (e) { if (String(e).includes('fatal')) throw e; await new Promise((s) => setTimeout(s, 2500 * Math.min(a, 6))); }
   }
   throw new Error('upload failed for ' + f.file);
 }
