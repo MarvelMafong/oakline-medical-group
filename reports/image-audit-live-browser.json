@@ -1,0 +1,312 @@
+{
+ "base": "https://oakline-medical-group-zeta.vercel.app",
+ "at": "2026-11-20T22:51:38.468Z",
+ "pages": {
+  "/": {
+   "refs": 143,
+   "problems": [
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "dept-womens-health.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "dept-pediatrics.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "dept-cardiology.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "dept-dermatology.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "dept-diagnostics.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "stage-parents-and-children.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "stage-working-adults.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "stage-older-adults.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "stage-working-adults.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "gallery-open-lobby.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "team-blue-scrubs.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "doctor-portrait-01.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "doctor-portrait-02.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "doctor-portrait-03.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "team-hallway.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "gallery-quiet-room.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "visit-clinic-space.jpg"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "dph"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "dph"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "dph top"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "dph"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "dph dg"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "sc s1 rv"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "sc s2 rv"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "sc s3 rv"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "jc c1 rv"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "jc c3"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "jc c5"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "team rv"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "gc g5"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "wide rv"
+    },
+    {
+     "kind": "browser-1280-bgi-broken",
+     "detail": "/images/bg-dna-molecule-736.webp"
+    },
+    {
+     "kind": "browser-390-naturalWidth0",
+     "detail": "team-blue-scrubs.jpg"
+    },
+    {
+     "kind": "browser-390-empty-slot",
+     "detail": "jc c5"
+    },
+    {
+     "kind": "browser-390-bgi-broken",
+     "detail": "/images/bg-leaf-736.webp"
+    },
+    {
+     "kind": "browser-390-bgi-broken",
+     "detail": "/images/bg-dna-molecule-736.webp"
+    },
+    {
+     "kind": "browser-390-bgi-broken",
+     "detail": "/images/bg-leaf-736.webp"
+    }
+   ],
+   "images1280": 31,
+   "images390": 31
+  },
+  "/doctors/": {
+   "refs": 56,
+   "problems": [
+    {
+     "kind": "browser-1280-page-crash",
+     "detail": "page.goto:"
+    },
+    {
+     "kind": "browser-390-page-crash",
+     "detail": "page.goto:"
+    }
+   ]
+  },
+  "/departments/primary-care/": {
+   "refs": 38,
+   "problems": [
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "doctor-portrait-01.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "hero-consultation.jpg"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "rph"
+    }
+   ],
+   "images1280": 7,
+   "images390": 7
+  },
+  "/case-study/": {
+   "refs": 16,
+   "problems": [
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "case-home.webp"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "case-booking.webp"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "case-mobile.webp"
+    },
+    {
+     "kind": "browser-390-naturalWidth0",
+     "detail": "case-home.webp"
+    },
+    {
+     "kind": "browser-390-naturalWidth0",
+     "detail": "case-mobile.webp"
+    }
+   ],
+   "images1280": 5,
+   "images390": 5
+  },
+  "/resources/": {
+   "refs": 64,
+   "problems": [
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "dept-primary-care.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "hero-consultation.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "stage-parents-and-children.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "dept-dermatology.jpg"
+    },
+    {
+     "kind": "browser-1280-naturalWidth0",
+     "detail": "dept-diagnostics.jpg"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "rph"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "rph"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "rph"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "rph"
+    },
+    {
+     "kind": "browser-1280-empty-slot",
+     "detail": "rph"
+    },
+    {
+     "kind": "browser-390-naturalWidth0",
+     "detail": "hero-consultation.jpg"
+    },
+    {
+     "kind": "browser-390-naturalWidth0",
+     "detail": "dept-dermatology.jpg"
+    },
+    {
+     "kind": "browser-390-empty-slot",
+     "detail": "rph"
+    },
+    {
+     "kind": "browser-390-empty-slot",
+     "detail": "rph"
+    }
+   ],
+   "images1280": 10,
+   "images390": 10
+  },
+  "/appointments/": {
+   "refs": 8,
+   "problems": [
+    {
+     "kind": "browser-1280-page-crash",
+     "detail": "page.goto:"
+    },
+    {
+     "kind": "browser-390-naturalWidth0",
+     "detail": "mega "
+    }
+   ],
+   "images390": 1
+  }
+ },
+ "summary": {
+  "uniqueImageUrls": 183,
+  "routes": 6,
+  "problems": 63,
+  "byKind": {
+   "browser-1280-naturalWidth0": 27,
+   "browser-1280-empty-slot": 20,
+   "browser-1280-bgi-broken": 1,
+   "browser-1280-page-crash": 2,
+   "browser-390-naturalWidth0": 6,
+   "browser-390-empty-slot": 3,
+   "browser-390-bgi-broken": 3,
+   "browser-390-page-crash": 1
+  }
+ }
+}

@@ -1,4 +1,4 @@
-Overall progress: 100% of the build, the empty-image fix, the production redeploy and the GitHub push. Live browser re-check of images is covered on the key pages only (see Image audit).
+Overall progress: 100% of the build, the empty-image fix, the production redeploy and the GitHub push. A clean live browser image audit is still outstanding (network too slow here; see Image audit).
 
 # Oakline Medical Group: final report
 
@@ -73,7 +73,7 @@ Overall progress: 100% of the build, the empty-image fix, the production redeplo
 - Static, all 41 routes in out/: 183 unique image URLs, every file exists and is non-empty. 0 problems (reports/image-audit-static.json).
 - Browser, local production build, all 41 routes at 1280 and 390 px: 0 problems (reports/image-audit.json). Before the fix the audit and screenshots showed the journey and team slots broken.
 - Production (https://oakline-medical-group-zeta.vercel.app, deploy dpl_6hqnHTUvDzZHDEQkUZHCMV6GgFqM): all 183 image URLs return 200, non-empty, with an image content type. 165 passed on the first run and the 18 that timed out on this slow link passed on a recheck (reports/image-audit-live-http.json, image-audit-live-http-recheck.json). 0 failing.
-- Production, real browser pass: started on the key pages at both widths, but this machine's connection is only a few KB/s, so it is very slow. The deployed files are byte-identical to the local build that passed all 41 routes, so I treat the local browser result as the result for production. If you want a live browser run, use: ONLY=/,/doctors/ node scripts/image-audit.mjs <url> (needs playwright-core).
+- Production, real browser pass (6 key pages, both widths, reports/image-audit-live-browser.json): **reported 63 problems** (naturalWidth 0, empty slots, 3 page crashes). The audit waits at most 20 seconds for images, and this machine reaches Vercel at only a few KB/s, so images that had not finished downloading were flagged. I could not prove that from the browser run itself. What I did prove: all 236 image files on production have exactly the same byte size as the local build (reports/live-file-compare.json, 0 differing), and all 183 referenced URLs return 200 with image content types. The same audit on the identical local build reports 0 problems on all 41 routes at both widths. So I believe production is correct, but a clean live browser run on a normal connection is still outstanding. Please run: ONLY=/,/doctors/ TOOLS_DIR=<playwright dir> node scripts/image-audit.mjs https://oakline-medical-group-zeta.vercel.app
 
 **Deploy.** One more production deploy (no previews, no functions, local build, low-concurrency upload). The first attempt failed on an expired CLI login; refreshing it fixed that. Deploys total: 1 preview, 3 production successes counting this one (plus 1 production attempt that errored on the framework preset). Code is pushed to GitHub (main).
 
